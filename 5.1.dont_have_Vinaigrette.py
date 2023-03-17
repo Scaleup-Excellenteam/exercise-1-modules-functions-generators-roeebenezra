@@ -10,6 +10,7 @@ def dont_have_Vinaigrette(start_d, end_d):
     calculates the time range between the start and end dates,
     generates a random number of days between 0 and the total time range,
     and adds that random number of days to the start date to calculate a new random date.
+
     :param start_d: start date string representing dates in the format 'YYYY-MM-DD'
     :param end_d: end date string representing dates in the format 'YYYY-MM-DD'
     :return: random date converted back to a string in the 'YYYY-MM-DD' format

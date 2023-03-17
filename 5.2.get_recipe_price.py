@@ -1,10 +1,13 @@
 def get_recipe_price(prices, optionals=None, **ingredients):
     """
+    The function get_recipe_price calculates the total price of a recipe
+    based on a dictionary of ingredient prices and a dictionary of required
+    ingredients and their quantities.
 
-    :param prices:
-    :param optionals:
-    :param ingredients:
-    :return:
+    :param prices: a dictionary of ingredient prices.
+    :param optionals: a list of optional ingredients.
+    :param ingredients: a dictionary of required ingredients.
+    :return: total price of recipe.
     """
     # If optionals is not provided, consider all ingredients optional
     if optionals is None:
