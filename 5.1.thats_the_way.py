@@ -12,6 +12,7 @@ def that_is_the_way(path):
     return [file for file in os.listdir(path) if 'deep' in file]
 
 
-# print the search result
-print(that_is_the_way(os.path.join('images')))
+if __name__ == '__main__':
+    # print the search result
+    print(that_is_the_way(os.path.join('images')))
 

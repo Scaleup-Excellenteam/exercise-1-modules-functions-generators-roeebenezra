@@ -45,9 +45,10 @@ def interleave_generator(*args):
         yield elem
 
 
-# interleave() test:
-print(interleave('abcd', [1, 2, 3, 6], ('!', '@', '-', 'k')))
+if __name__ == '__main__':
+    # interleave() test:
+    print(interleave('abcd', [1, 2, 3, 6], ('!', '@', '-', 'k')))
 
-# interleave_generator() test:
-for element in interleave_generator('abc', [1, 2, 3], ('!', '@', '#')):
-    print(element, end=' ')
+    # interleave_generator() test:
+    for element in interleave_generator('abc', [1, 2, 3], ('!', '@', '#')):
+        print(element, end=' ')

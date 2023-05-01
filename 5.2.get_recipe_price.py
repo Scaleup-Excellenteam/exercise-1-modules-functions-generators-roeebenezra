@@ -28,9 +28,10 @@ def get_recipe_price(prices, optionals=None, **ingredients):
     return int(total_price)
 
 
-# test get_recipe_price():
-print(get_recipe_price({'chocolate': 18, 'milk': 8}, chocolate=200, milk=100))
+if __name__ == '__main__':
+    # test get_recipe_price():
+    print(get_recipe_price({'chocolate': 18, 'milk': 8}, chocolate=200, milk=100))
 
-print(get_recipe_price({'chocolate': 18, 'milk': 8}, optionals=['milk'], chocolate=300))
+    print(get_recipe_price({'chocolate': 18, 'milk': 8}, optionals=['milk'], chocolate=300))
 
-print(get_recipe_price({}))
+    print(get_recipe_price({}))

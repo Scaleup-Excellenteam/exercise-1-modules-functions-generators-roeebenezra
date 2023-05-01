@@ -17,19 +17,20 @@ def join(*lists, sep='-'):
     return joined_list
 
 
-# test join():
-list1, list2, list3 = ['a', 'b', 'c', 3, 4], [1, 2, 3, 'e'], ['x', 'y', 'z', 3, 4, 5]
+if __name__ == '__main__':
+    # test join():
+    list1, list2, list3 = ['a', 'b', 'c', 3, 4], [1, 2, 3, 'e'], ['x', 'y', 'z', 3, 4, 5]
 
-# Join the lists using '-' as the separator
-print(join(list1, list2, list3, sep='@'))
+    # Join the lists using '-' as the separator
+    print(join(list1, list2, list3, sep='@'))
 
-# Join the lists using '/' as the separator
-print(join(list1, list2, list3, sep='/'))
+    # Join the lists using '/' as the separator
+    print(join(list1, list2, list3, sep='/'))
 
-# Join the lists using the default separator '-'
-print(join(list1, list2, list3))
+    # Join the lists using the default separator '-'
+    print(join(list1, list2, list3))
 
-# Error raise for empty lists value
-print(join())
+    # Error raise for empty lists value
+    print(join())
 
 

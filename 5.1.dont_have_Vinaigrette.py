@@ -4,13 +4,8 @@ from datetime import datetime, timedelta
 
 def dont_have_Vinaigrette(start_d, end_d):
     """
-    The function checks if the start date is earlier than
-    the end date, and raises a ValueError if it is not.
-    It then converts the input strings to datetime objects,
-    calculates the time range between the start and end dates,
-    generates a random number of days between 0 and the total time range,
-    and adds that random number of days to the start date to calculate a new random date.
-
+    The dont_have_Vinaigrette function takes in two date strings representing a start date and an end date,
+    and returns a random date between those two dates.
     :param start_d: start date string representing dates in the format 'YYYY-MM-DD'
     :param end_d: end date string representing dates in the format 'YYYY-MM-DD'
     :return: random date converted back to a string in the 'YYYY-MM-DD' format
@@ -40,5 +35,8 @@ def dont_have_Vinaigrette(start_d, end_d):
     return rand_date.strftime('%Y-%m-%d')
 
 
-# print the random date result
-print(dont_have_Vinaigrette('1915-06-23', '1952-06-07'))
+if __name__ == '__main__':
+    start_d = input('Enter a start date in the format YYYY-MM-DD: ')
+    end_d = input('Enter a end date in the format YYYY-MM-DD: ')
+    # print the random date result
+    print(dont_have_Vinaigrette(start_d, end_d))
