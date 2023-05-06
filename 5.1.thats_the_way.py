@@ -9,7 +9,7 @@ def that_is_the_way(path):
     :param path: path of directory to search in
     :return: list of matches
     """
-    return [file for file in os.listdir(path) if 'deep' in file]
+    return [file for file in os.listdir(path) if file.startswith('deep')]
 
 
 if __name__ == '__main__':
